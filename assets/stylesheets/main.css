@@ -54,9 +54,9 @@ table {
 */
 
 body {
+  background: #293f50;
   color: #888;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #293f50;
 }
 
 /*
@@ -120,6 +120,28 @@ body {
 
 /*
   ========================================
+  Rows
+  ========================================
+*/
+
+.row,
+.row-alt {
+  min-width: 960px;
+}
+.row {
+  background: #fff;
+  padding: 66px 0 44px 0;
+}
+.row-alt {
+  background: #cbe2c1;
+  background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background:    -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background:         linear-gradient(to right, #a1d3b0, #f6f1d3);
+  padding: 44px 0 22px 0;
+}
+
+/*
+  ========================================
   Typography
   ========================================
 */
@@ -160,6 +182,20 @@ em {
 
 /*
   ========================================
+  Leads
+  ========================================
+*/
+
+.lead {
+  text-align: center;
+}
+.lead p {
+  font-size: 21px;
+  line-height: 33px;
+}
+
+/*
+  ========================================
   Links
   ========================================
 */
@@ -174,11 +210,15 @@ a:hover {
 p a {
   border-bottom: 1px solid #dfe2e5;
 }
-
 .primary-header a,
-.primary-footer a{
+.primary-footer a {
   color: #fff;
 }
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
+
 /*
   ========================================
   Buttons
@@ -199,7 +239,7 @@ p a {
   border: 1px solid #fff;
   padding: 10px 30px;
 }
-.btn-alt:hover{
+.btn-alt:hover {
   background: #fff;
   color: #648880;
 }
@@ -257,6 +297,14 @@ p a {
 .nav {
   text-align: right;
 }
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
 
 /*
   ========================================
@@ -280,97 +328,48 @@ p a {
 .teaser a:hover h3 {
   color: #a9b2b9;
 }
-
-
-.primary-header a:hover,
-.primary-footer a:hover{
-  color: #648880;
-}
-
-
-/*
-  ========================================
-  Rows
-  ========================================
-*/
-
-.row{
-  background: #fff;
-  min-width: 960px;
-  padding: 66px 0 44px 0;
-}
-
-.row,
-.row-alt{
-  min-width: 960px;
-}
-.row{
-  background: #fff;
-  padding: 66px 0 44px 0;
-}
-.row-alt{
-  background: #cbe2c1;
-  background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
-  background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
-  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
-  padding: 44px 0 22px 0;
-}
-
-.lead{
-  text-align: center;
-}
-.lead p{
-  font-size: 21px;
-  line-height: 33px;
-}
-
-.nav li{
-  display: inline-block;
-  margin: 0 10px;
-  vertical-align: top;
-}
-.mav li:last-child{
-  margin-right: 0;
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%
 }
 
 /*
   ========================================
-  Typography
+  Speakers
   ========================================
 */
 
-.speaker-info{
+.speaker {
+  margin-bottom: 44px;
+}
+.speaker-info {
   border: 1px solid #dfe2e5;
   border-radius: 5px;
   margin-top: 88px;
-  padding: 22px 0;
+  padding-bottom: 22px;
   text-align: center;
 }
-.speaker{
-  margin-bottom: 44px;
+.speaker-info img {
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
 }
 
+/*
+  ========================================
+  Venue
+  ========================================
+*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.venue-theatre {
+  margin-bottom: 66px;
+}
+.venue-hotel {
+  margin-bottom: 22px;
+}
+.venue-map {
+  height: 264px;
+}
